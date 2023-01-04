@@ -1,0 +1,89 @@
+@import url(normalize.css);
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    background: linear-gradient(rgb(23, 23, 90), rgb(20, 9, 46)) fixed
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 53, 87);
+    color: white;
+}
+
+.create{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create input[type=text]{
+    background-color: rgb(44, 27, 63);
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    width: 45%;
+    color: white;
+    transition: all .2s ease;
+}
+
+.create input[type=text]:focus{
+     box-shadow: 0 0 1em rgb(62, 23, 105);
+}
+
+.create button{
+    background-color: rgb(122, 75, 177);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
+}
+
+.create button:hover{
+    cursor: pointer;
+    background-color: rgb(83, 51, 119);
+}
+
+.tasks{
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.task{
+    background-color: rgb(53, 53, 68);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    transition: all 0.3s ease;
+
+
+
+}
+
+.task:hover{
+    background-color: rgb(40, 41, 54);
+    transform: translateX(15px);
+}
+
+.task button{
+    background-color: rgb(42, 26, 56);
+    padding: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.task button:hover{
+    background-color: rgb(32, 20, 43);
+
+}
