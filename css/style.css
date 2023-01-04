@@ -1,15 +1,15 @@
 @import url(normalize.css);
 
 body{
-    font-family: 'Source Code Pro', monospace;
-    background: linear-gradient(rgb(23, 23, 90), rgb(20, 9, 46)) fixed
+    font-family: 'Source Sans Pro', monospace;
+    background-color: whitesmoke;
 }
 
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(66, 53, 87);
+    background-color: rgb(148, 148, 247);
     color: white;
 }
 
@@ -22,32 +22,35 @@ header{
 }
 
 .create input[type=text]{
-    background-color: rgb(44, 27, 63);
+    background-color: white;
+    box-shadow: 0 0 1em rgb(100, 98, 98, 0.5);
     border-radius: 10px;
     border: 0;
     outline: 0;
     padding: 10px;
     width: 45%;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: all .2s ease;
 }
 
 .create input[type=text]:focus{
-     box-shadow: 0 0 1em rgb(62, 23, 105);
+    box-shadow: 0 0 1em rgba(158, 122, 243);
 }
 
 .create button{
-    background-color: rgb(122, 75, 177);
+    background-color: rgb(148, 148, 247);
+    box-shadow: 0 0 1em rgb(100, 98, 98, 0.5);
     border-radius: 10px;
     border: none;
     padding: 10px;
     margin-left: 5px;
     color: white;
+    
 }
 
 .create button:hover{
     cursor: pointer;
-    background-color: rgb(83, 51, 119);
+    background-color: rgb(152, 91, 223);
 }
 
 .tasks{
@@ -57,33 +60,40 @@ header{
 }
 
 .task{
-    background-color: rgb(53, 53, 68);
+    background-color: white;
+    box-shadow: 0 0 1em rgb(100, 98, 98, 0.5);
     border-radius: 10px;
     padding: 10px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
-
-
 
 }
 
 .task:hover{
-    background-color: rgb(40, 41, 54);
+    /*background-color: rgb(40, 41, 54);*/
+    background-color: rgb(148, 148, 247);
     transform: translateX(15px);
+    color: white;
+}
+
+.task:hover button{
+    /*background-color: white;*/
+    /*color: black;*/
+    display: block;
 }
 
 .task button{
-    background-color: rgb(42, 26, 56);
+    background-color: rgba(228, 91, 57, 0.9);
+    box-shadow: 0 0 1em rgb(100, 98, 98, 0.5);
+    border-radius: 10px;
     padding: 14px;
     border: none;
     color: white;
     cursor: pointer;
-}
-.task button:hover{
-    background-color: rgb(32, 20, 43);
-
+    display: none;
 }
